@@ -15,9 +15,7 @@ const Home = () => {
     }
   };
 
-  useEffect(() => {
-    getEnrolledCourses();
-  }, []);
+  useEffect(() => {}, []);
 
   console.log(Cards);
 
