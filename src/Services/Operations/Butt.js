@@ -2,11 +2,11 @@ import toast from "react-hot-toast";
 
 import { apiConnector } from "../apiconnector";
 import { blogpoints } from "../apis";
-import { setLoading, setToken, setResponse } from "../../slices/authslices";
+import { setLoading } from "../../slices/authslices";
 
 const { DELETEBLOG_API } = blogpoints;
 
-const UPDATEBLOG_API = "http://localhost:4000/api/v1/updateBlog";
+const UPDATEBLOG_API = "https://blogging-4upa.onrender.com/api/v1/updateBlog";
 
 export async function deleteblogs(token, blogId, navigate) {
   const toastId = toast.loading("Loading...");

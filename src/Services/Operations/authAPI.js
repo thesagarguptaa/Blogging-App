@@ -7,7 +7,7 @@ import { endpoints } from "../apis";
 
 const { SIGNUP_API, LOGIN_API } = endpoints;
 
-const CREATEBLOG_API = "http://localhost:4000/api/v1/createBlog ";
+const CREATEBLOG_API = "https://blogging-4upa.onrender.com/api/v1/createBlog ";
 
 export function signUp(Name, email, password, navigate) {
   return async (dispatch) => {
