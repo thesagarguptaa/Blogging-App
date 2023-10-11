@@ -49,7 +49,7 @@ exports.createBlog = async (req, res) => {
       { new: true }
     );
 
-    console.log("user updated", updated);
+    console.log("user updated", update);
     res.status(200).json({
       success: true,
       response,
